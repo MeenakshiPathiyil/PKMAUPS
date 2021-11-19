@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
+
+
+.centered
+{
+    text-align: center;
+}
+
+.large
+{
+    font-weight: bold;
+    font-family: garamond;
+    z-index: 1;
+}
+
+.medium
+{
+    font-weight: bold;
+    font-family: verdana;
+    color: #adbac7;
+}
+
+.small
+{
+    font-size: small;
+}
+
+a
+{
+    font-family: serif;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.underline
+{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.dropbtn
+{
+    background-color: #545d68;
+    color: #adbac7;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #545d68;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+    color: #adbac7;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover
+{
+    background-color: #545d68;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+.dropdown:hover .dropbtn
+{
+    background-color: #545d68;
+}
+
+hr
+{
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 3px solid black;
+    margin: 1em 0;
+    padding: 0;
+    margin-top: -2px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.colorstrip
+{
+    background-color: #545d68;
+    width: 110%;
+    height: 73px;
+    border-color: #545d68;
+    border-style: solid;
+    margin-left: -11px;
+    
+}
+
+.top
+{
+    line-height: 40px;
+}
+
+body
+{
+    color: #adbac7;
+    background-color: #22272e;
+    width: 95%;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+.left
+{
+    margin-left: -20px;
+}
+
+.center
+{
+    margin-left: 630px;
+}
+
+.head
+{
+    margin-left: 730px;
+}
+
+.text
+{
+    margin-left: 750px;
+}
+
+.bgvideo
+{
+    width: 1550px;
+    height: 20%;
+    margin-top: 0px;
+    margin-left: -10px;
+}
+
+.progress-container 
+{
+    width: 10%;
+    height: 40px;
+    background: #ccc;
+}
+  
+.progress-bar 
+{
+    height: 40px;
+    background: #04AA6D;
+    width: 0%;
+}
+
+h3
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.announcements
+{
+    margin-top: 50px;
+    margin-left: 1000px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: 350px;
+    height: 200px;
+    font-size: 20px;
+}
+
+.video 
+{
+    margin-left: 100px;
+}
+
+p
+{
+    margin-left: 120px;
+}
+
+footer
+{
+    background-color: #121314;
+    width: 110%;
+    height: 200px;
+    border-color: #1e74dd;
+    border-style: solid;
+    margin-left: -11px;
+    margin-top: 100px;
+    
+}
+
+.faculty
+{
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.aboutus
+{
+    font-size: 20px;
+}
+
+.gallery 
+{
+    float: left;
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
