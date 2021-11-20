@@ -126,7 +126,7 @@ hr
 body
 {
     color: #adbac7;
-    background-color: #22272e;
+    background-color: rgb(0, 0, 0);
     width: 95%;
     position: absolute;
     overflow-x: hidden;
@@ -205,7 +205,7 @@ footer
 {
     background-color: #121314;
     width: 110%;
-    height: 200px;
+    height: 250px;
     border-color: #1e74dd;
     border-style: solid;
     margin-left: -11px;
@@ -230,6 +230,38 @@ footer
     width:  300px;
     height: 300px;
     object-fit: cover;
+    position: center;
+}
+
+.facilities
+{
+    font-size: 20px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.news
+{
+    font-size: 20px;
+}
+
+.social
+{
+    margin-top: 53px;
+}
+
+.thankyou
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 575px;
+    margin-top: 70px;
+}
+
+.contact
+{
+    margin-left: 450px;
+    font-size: 20px;
+    margin-top: 70px;
 }
 
 
