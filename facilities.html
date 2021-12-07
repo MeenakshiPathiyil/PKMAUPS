@@ -5,6 +5,7 @@
     <head>
         <meta charset = "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "icon" href = "pkmaup.jpg" type = "image/jpg">
         <title>
             PKMAUP SCHOOL
         </title>
@@ -12,36 +13,66 @@
     </head>
 
     <body >
-        <header class = "center large">
-            <h1>PKMAUP SCHOOL</h1>
-        </header>
+        <div class="menu-wrapper">
+            <header class="header">
+             <a href="home.html" class="logo">
+                 PKMAUP School
+                 <p class = "established">Estd. 1893</p>
+             </a>
+             <input class="menu-btn" type="checkbox" id="menu-btn" />
+             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+             <ul class="menu">
+               <li><a href="aboutus.html">About Us</a></li>
+               <li><a href="faculty.html">Faculty</a></li>
+               <li><a href="facilities.html">Facilities</a></li>
+               <li><a href="inthenews.html">In The News</a></li>
+               <li><a href="achievements.html">Achievements</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="studentscorner.html">Students Corner</a></li>
+               <li><a href="contactmanagement.html">Contact Us</a></li>
+             </ul>
+           </header>
+           
+        </div>
 
-        <img src = "pkmaup.jpg" style = "width: 100px; margin-top: -80px; margin-left: 470px;">
+        <script>
+            //Get the all menu links
+             var links = document.querySelectorAll(".menu a");
+                 
+             //Apply click function to each link    
+             for (var i = 0; i < links.length; i++){
+                 
+                   links[i].addEventListener("click", function(){
+                     
+                       //Close menu 
+                      document.getElementById("menu-btn").checked = false;
+                });
+             }    
+        </script>
 
-        <main class = "centered colorstrip medium">
-             <a href = "home.html" class = "top medium">HOME</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <a href = "aboutus.html" class = "top medium">ABOUT US</a> &nbsp;&nbsp;
-             <div class = "dropdown">
-                 <button class = "dropbtn top medium">FACULTY</button>&nbsp;&nbsp;&nbsp;
-                 <div class = "dropdown-content left">
-                     <a href = "currentfaculty.html"> CURRENT FACULTY </a>
-                     <a href = "retiredfaculty.html"> RETIRED FACULTY </a>
-                 </div>
-             </div>
-             <a href = "facilities.html" class = "underline top medium">FACILITIES</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <a href = "inthenews.html" class = "top medium">IN THE NEWS</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <a href = "achievements.html" class = "top medium">ACHIEVEMENTS</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <a href = "gallery.html" class = "top medium">GALLERY</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <a href = "studentscorner.html" class = "top medium">STUDENTS CORNER</a> &nbsp;&nbsp;
-             <div class = "dropdown">
-                 <button class = "dropbtn top medium">CONTACT US</button>&nbsp;&nbsp;&nbsp;
-                 <div class = "dropdown-content">
-                     <a href = "contactschool.html"> SCHOOL </a>
-                     <a href = "contactmanagement.html"> MANAGEMENT </a>
-                 </div>
-             </div>
+        <br><br><br>
 
-        </main>
+        <div>
+            <!-- Return to Top -->
+            <a href="javascript:" id="return-to-top"><i>&nbsp;↑</i></a>
+
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+            <script>
+            // ===== Scroll to Top ==== 
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                    } else {
+                        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                    }
+                });
+                $('#return-to-top').click(function() {      // When arrow is clicked
+                    $('body,html').animate({
+                        scrollTop : 0                       // Scroll to top of body
+                    }, 500);
+                });
+            </script>
+        </div>
 
     </body>
 
@@ -52,38 +83,60 @@
         </title>
     </head>
     <body>
-        <h2 class = "head">FACILITIES</h2>
+        
         <div class = "facilities">
             <p>
-                PKMAUP School offers a wide range of facilities for the students and faculty to create a safe and fun 
+                PKMAUP School offers a wide range of facilities for the students and faculty, to create a safe and fun 
                 learning environment.
             </p>
             <br><br><br>
             <ul>
-                <li>Mid-day meals</li>
-                <li>Transportation</li>
-                <li>computer classrooms</li>
-                <li>etc etc etc</li>
+                <li>Hi-Tech classrooms</li>
+                <li>Hi-Tech computer lab</li>
+                <li>Talent lab</li>
+                <li>Online classes</li>
+                <li>Spoken English classes</li>
+                <li>Arts and Sports classes</li>
+                <li>Experiment facilities</li>
+                <li>Special Education classes</li>
+                <li>Multi-language classes</li>
+                <li>LSS/ USS coaching</li>
+                <li>Specialised subject-related activities</li>
+                <li>Yoga and Dance training</li>
+                <li>School transport facility</li>
             </ul>
         </div>
+        <br><br><br>
     </body>
 
+    <hr>
+
     <footer>
-        <main>
-            <h3 style = "margin-left: 250px;">CONTACT US</h3>
-            <p>School: <br></p>
-            <p>Management: <br></p>
-            
-            <h3 style = "margin-left: 1180px; margin-top: -109px">SOCIAL MEDIA</h3>
-            <a style = "margin-left: 1150px; color: white;" href = "https://www.youtube.com/channel/UCKhhxtMOqx3pA9Enyv-ja7A">YOUTUBE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a style = "color: white; margin-top: 100px;" href = "https://www.facebook.com/Pkmaup-school-Chittilamchery-1705386393120264/">FACEBOOK</a>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+        <main> 
+            <div class="footer">
+                <div class="contain">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "pkmaups logo.jpg" style = "width: 85px;">
+                  <div class="col social">
+                    <h1>&nbsp;Social</h1>
+                    <ul>
+                      <li><a href = "https://www.youtube.com/channel/UCKhhxtMOqx3pA9Enyv-ja7A"><img src="youtube.jpg" width="32" style="width: 45px;"></a></li>
+                      &nbsp;<li><a href = "https://www.facebook.com/Pkmaup-school-Chittilamchery-1705386393120264/"><img src="facebook.jpg" width="32" style="width: 35px;"></a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h1><a href = "https://goo.gl/maps/ozW8dzzGPM7MA7yL8">Location</a></h1>
+                  </div>
+                  <div class="col">
+                    <h1><a href = "contactmanagement.html">Contact Us</a></h1>
+                  </div>
+                  <div class="col">
+                    <h1><a href = "aboutus.html">About Us</a></h1>
+                  </div>
+                
+              <div class="clearfix"></div>
+              </div>
+              </div>
         </main>
         
     </footer>
