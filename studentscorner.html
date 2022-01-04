@@ -6,8 +6,10 @@
         <meta charset = "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel = "icon" href = "pkmaup.jpg" type = "image/jpg">
+        <link rel = "stylesheet" type = "text/css" href = "css/lightbox.min.css">
+        <script src = "js/lightbox-plus-jquery.min.js"></script>
         <title>
-            PKMAUP SCHOOL
+            PKMAUP School
         </title>
         <link rel = "stylesheet" href = "style.css">
     </head>
@@ -83,31 +85,26 @@
         </title>
     </head>
     <body>
-        <div class = "full-img" id = "fullImgBox">
-            <img src = "pkmaup1.JPG" id = "fullImg">
-            <span onclick = "closeFullImg()">X</span>
-          </div>
-        
-          <div class = "img-gallery">
-            <img src = "Students1.jpg" onclick = "openFullImg(this.src)">
 
-          </div>
-        
-          <script>
-            var fullImgBox = document.getElementById("fullImgBox");
-            var fullImg = document.getElementById("fullImg");
-        
-            function openFullImg(pic)
-            {
-              fullImgBox.style.display = "flex";
-              fullImg.src = pic;
-            }
-        
-            function closeFullImg()
-            {
-              fullImgBox.style.display = "none";
-            }
-          </script>
+        <div class="row"> 
+            <div class="column">
+              <a href = "Students1.jpg" data-lightbox="mygallery"><img src = "Students1.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+            </div>
+
+            <div class="column">
+                <a href = "Students2.jpeg" data-lightbox="mygallery"><img src = "Students2.jpeg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+            </div>
+
+            <div class="column">
+                <a href = "Students3.jpeg" data-lightbox="mygallery"><img src = "Students3.jpeg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+            </div>
+
+            <div class="column">
+                <a href = "Students4.jpeg" data-lightbox="mygallery"><img src = "Students4.jpeg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+            </div>
+
+        </div>
+      
     </body>
     <br><br>
 
@@ -138,6 +135,7 @@
                 
               <div class="clearfix"></div>
               </div>
+              <h3 class = "credits">Designed by Meenakshi</h3><br>
               </div>
         </main>
         

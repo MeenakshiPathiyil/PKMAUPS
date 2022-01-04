@@ -6,8 +6,10 @@
         <meta charset = "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel = "icon" href = "pkmaup.jpg" type = "image/jpg">
+        <link rel = "stylesheet" type = "text/css" href = "css/lightbox.min.css">
+        <script src = "js/lightbox-plus-jquery.min.js"></script>
         <title>
-            PKMAUP SCHOOL
+            PKMAUP School
         </title>
         <link rel = "stylesheet" href = "style.css">
     </head>
@@ -82,39 +84,32 @@
         </title>
     </head>
     <body>
-        <div class = "full-img" id = "fullImgBox">
-            <img src = "pkmaup1.JPG" id = "fullImg">
-            <span onclick = "closeFullImg()">X</span>
+        
+          <div class = "row">
+            <div class="column">
+              <a href = "pkmaup22.JPG" data-lightbox = "mygallery"><img src="pkmaup22.JPG" style="width:100%" onclick = "openFullImg(this.src)"></a>
+              <a href = "pkmaup23.jpg" data-lightbox = "mygallery"><img src="pkmaup23.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+              <a href = "pkmaup24.jpg" data-lightbox = "mygallery"><img src="pkmaup24.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+              <a href = "pkmaup10.jpg" data-lightbox = "mygallery"><img src="pkmaup10.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+            </div>
+            <div class="column">
+              <a href = "pkmaup27.jpg" data-lightbox = "mygallery"><img src="pkmaup27.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+              <a href = "pkmaup35.jpg" data-lightbox = "mygallery"><img src="pkmaup35.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+              <a href = "pkmaup38.jpg" data-lightbox = "mygallery"><img src="pkmaup38.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+            </div>
+            <div class="column">
+              <a href = "pkmaup33.jpg" data-lightbox = "mygallery"><img src="pkmaup33.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+              <a href = "pkmaup36.jpg" data-lightbox = "mygallery"><img src="pkmaup36.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+              <a href = "pkmaup19.jpg" data-lightbox = "mygallery"><img src="pkmaup19.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+              <a href = "pkmaup14.jpg" data-lightbox = "mygallery"><img src="pkmaup14.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+            </div>
+            <div class="column">
+              <a href = "pkmaup34.jpg" data-lightbox = "mygallery"><img src="pkmaup34.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+              <a href = "pkmaup16.jpg" data-lightbox = "mygallery"><img src="pkmaup16.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+              <a href = "pkmaup18.jpg" data-lightbox = "mygallery"><img src="pkmaup18.jpg" style="width:100%" onclick = "openFullImg(this.src)"></a>
+            </div>
           </div>
         
-          <div class = "img-gallery">
-            <img src = "pkmaup36.jpg" onclick = "openFullImg(this.src)">
-            <img src = "pkmaup35.jpg" onclick = "openFullImg(this.src)">
-            <img src = "pkmaup34.jpg" onclick = "openFullImg(this.src)">
-            <img src = "pkmaup33.jpg" onclick = "openFullImg(this.src)">
-            <img src = "pkmaup10.jpg" onclick = "openFullImg(this.src)">
-            <img src = "pkmaup19.jpg" onclick = "openFullImg(this.src)">
-            <img src = "pkmaup22.JPG" onclick = "openFullImg(this.src)">
-            <img src = "pkmaup23.jpg" onclick = "openFullImg(this.src)">
-            <img src = "pkmaup27.jpg" onclick = "openFullImg(this.src)">
-            <img src = "pkmaup24.jpg" onclick = "openFullImg(this.src)">
-          </div>
-        
-          <script>
-            var fullImgBox = document.getElementById("fullImgBox");
-            var fullImg = document.getElementById("fullImg");
-        
-            function openFullImg(pic)
-            {
-              fullImgBox.style.display = "flex";
-              fullImg.src = pic;
-            }
-        
-            function closeFullImg()
-            {
-              fullImgBox.style.display = "none";
-            }
-          </script>
     </body>
     <br><br>
 
@@ -145,6 +140,7 @@
                 
               <div class="clearfix"></div>
               </div>
+              <h3 class = "credits">Designed by Meenakshi</h3><br>
               </div>
         </main>
         
